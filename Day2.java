@@ -14,10 +14,8 @@ import java.util.*;
 
 public class Day2 {
 
-
     public static void main(String[] args) {
 
-    
         Day2 d2 = new Day2();
         //read file input line by line using scanner
        Scanner scanner = new Scanner(System.in);
@@ -61,38 +59,28 @@ public class Day2 {
                             }
                         }
 
-                       
-                        
                     }
                     
                 }
-                        //System.out.println(sec1[1]);
-                        if(higestred<=12 && higestgreen<=13 && higestblue<=14){
-                            scores[games] = games;
-                            sumup = sumup+scores[games];
-                          
-                        }
+                //part 1
+                if(higestred<=12 && higestgreen<=13 && higestblue<=14){
+                    scores[games] = games;
+                    sumup = sumup+scores[games];
+                    
+                }
 
-
-                        //part 2
-                        sumup1 = sumup1+(higestred*higestgreen*higestblue);
+                //part 2
+                sumup1 = sumup1+(higestred*higestgreen*higestblue);
 
                 games++;
             }
 
-         
             System.out.println("Part 1:"+sumup);
             System.out.println("Part 2:"+sumup1);
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         }
        
-        
     }
-
-    
-
-   
-
     
 }
